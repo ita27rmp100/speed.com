@@ -32,12 +32,31 @@ $("#again").click(function(){
     $("#again").css('background',color[indexColor-1])
 },()=>{$("#again").css('background','white')})
 // exit the notification of subscribition
-$("#exit").click(function() {
-    $("footer").fadeOut()
+function disappearFooter(params) {
+    $("footer").toggle(1000)
     $("body").css({
         "height": "100vh",
         "align-items": "center",
-        "position": "static",
-        "padding-bottom":"5px"
+        // "position": "static",
+        "margin-bottom":"15px"
     });
+}
+$("#exit").click(function() {
+    disappearFooter()
 })
+
+$("#login #signup").click(function(){
+    disappearFooter()
+})
+$(document).ready(
+    function() {
+        $('nav').toggle()
+        setTimeout(() => {
+            $("nav").html($('nav').html)
+        },2500);
+        $('nav').toggle(2000)
+        if(document.title=='Speed'){
+        }
+        else{$('#again').css('display','none');disappearFooter()}
+    }
+)

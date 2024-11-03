@@ -78,6 +78,8 @@ nav{
     bottom:auto;
     animation:appear 1.5s ease forwards;
     animation-delay: 0.5;
+    max-height: 500px;
+    overflow:visible;
 }
 /* header card */
 .img{
@@ -122,7 +124,7 @@ table{
 }
 
 /* responsive ( title in phones ) */
-@media  screen and (max-width:740px) {
+@media  screen and (max-width:760px) {
     body{
         flex-direction:column;
         height: auto;
@@ -135,7 +137,7 @@ table{
     }
     .img{width:100px}
     nav{
-        padding-bottom: 5px;
+        padding-bottom:5px;
         width:95%;
     }
     q{
