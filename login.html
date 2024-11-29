@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="speed.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Speed | log in</title>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1 class="title"><img src="speed.png" class="img" alt="Speed.com">PEED</h1>
+    </div>
+    <nav>
+        <section class="btns">
+            <button class="btn p-3 chTheme" style="background:#ff040491" id="change"></button>
+            <button class="btn p-2 reload"id="again">&#10227;&nbsp; Test again</button>
+        </section>
+        <h1  class="p-2 mt-3">Log in </h1>
+        <form action="/" method="get" class="text-left">
+            <div class="form-group">
+              <label for="username">User name :</label>
+              <input type="email" class="form-control" id="password" aria-describedby="emailHelp" placeholder="example@gmai.com">
+            </div>
+            <div class="form-group">
+              <label for="password">Password :</label>
+              <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <p>don't have an account ? <a href="http://">sign up</a></p>
+            <button type="submit" class="btn btn-outline-secondry">log in</button>
+        </form>
+    </nav>
+    <footer class="foot px-3">
+        <q class="text-muted text-md text-justify">Subscribe now if you want to follow your internet speed wherever you go and in any device</q>
+        <div class="float-right p-1">
+            <button type="button" id="exit" class="btn btn-outline-dark text-light p-2 ">&#10060;</button>
+            <a href="#" id="login" onclick="disappearFooter()" type="button" class="btn btn-dark text-light p-2 ">Log in</a>
+            <a href="#" id="signup" onclick="disappearFooter()" type="button" class="btn btn-outline-dark p-2">Sign up</a>
+        </div>
+    </footer>
+    <!-- link scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
