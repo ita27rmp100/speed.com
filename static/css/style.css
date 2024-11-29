@@ -1,0 +1,151 @@
+/* general */
+*{
+    transition: all 500ms;
+}
+/* body */
+body{
+    background:radial-gradient(#ff040491, #ff040491, #e8202078);
+    font-family:system-ui;
+    display: flex;
+    justify-content: center;
+}
+/* changing theme */
+.btns{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;}
+.chTheme{
+    position:absolute;
+    top:10px;
+    left:10px
+}
+.chTheme:active{
+    outline: 0px;
+}
+/* test again */
+.reload{
+    top:10px;
+    right:10px;
+    width:32px;
+    font-weight: bolder;
+    transition: width 1.5s;
+    overflow:hidden;
+    text-align: center;
+}
+.reload:hover{
+    width:120px;
+    border-radius:15px;
+}
+.reload:active{
+    color:white;
+    outline: 0px ;
+}
+
+/* Card */
+nav{
+    animation:appear 1.5s ease forwards;
+    animation-delay: 0.5;
+    width: 500px;
+    padding: 25px;
+    background: #ffffff8a;
+    border: 0px solid;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 14px #00000042;
+}
+/* header card */
+.img{
+    display: inline-block;
+    width: 200px;
+    position: relative;
+}
+h2{
+    font-weight: 450;
+    font-size: 1.7rem;
+}
+.Speed{
+    font-size: 25px;
+    font-weight: 400;
+    font-style: oblique;
+    color: #212020a3;
+}
+/* test resualt  */
+.speedStat{
+    list-style-type: none;
+    padding: 0px;
+}
+li{
+    display:flex;
+    justify-content: space-between;
+}
+/* table content */
+.history-div{
+    height: 275px;
+    overflow-y: scroll;
+}
+.header-msg{
+    background:linear-gradient(90deg, rgba(24,10,18,1) 0%, rgb(59, 55, 58) 51%, rgb(99, 88, 95) 75%, rgb(32, 18, 26) 100%);
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+  }
+.list-hist{
+    height: 275px;
+    overflow-y: scroll;
+    scrollbar-width:thin;
+}
+  .speed-his {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+  }
+  .elem{
+    width:100%;
+  }
+  .date{
+    position: relative;
+      font-size: 12px;
+      bottom:-25px;
+      right:5px;
+      width:140px
+  }
+/* responsive ( title in phones ) */
+@media  screen and (max-width:760px) {
+    .title{
+        font-size: 64px;
+        padding-bottom: 20px;
+        top:20px
+    }
+    nav{
+        width: 95%;
+    }
+    q{
+        display: block;
+    }
+}
+/* animations */
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+ }
+@keyframes appear {
+    0%{
+        transform:translateY(-50%);
+        opacity: 0;
+    }
+    100%{
+        transform:translateY(0);
+        opacity:1
+    }
+}
